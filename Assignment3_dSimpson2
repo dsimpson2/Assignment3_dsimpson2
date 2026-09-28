@@ -12,6 +12,10 @@ int main() {
     Array myArray;
     myArray.size = 5;
     myArray.data = (double *)malloc(myArray.size * sizeof(double));
+    if (myArray.data == NULL) {
+        perror("Failed to allocate array");
+        return EXIT_FAILURE;
+    }
 
     for (int i = 0; i < myArray.size; i++) {
         myArray.data[i] = i * 1.0; // Initialize with some values
