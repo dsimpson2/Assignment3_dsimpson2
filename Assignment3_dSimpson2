@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 // Keeping this array definition local to this file does not depend on an
-// unavailable header search path. This is a simple struct to hold an array of doubles and its size.
 
 typedef struct {
     int size;
